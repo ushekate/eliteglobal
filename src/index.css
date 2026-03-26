@@ -1,0 +1,77 @@
+/* ✅ IMPORTS MUST BE FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* ✅ THEME COLORS (UPDATED TO RED) */
+@theme {
+  --color-primary: #111111; /* Dark */
+  --color-accent: #e11d48;  /* RED (as boss said) */
+  --color-secondary: #6b7280;
+  --color-dark: #1f2937;
+  --color-light: #ffffff;
+  --color-bg-alt: #f9fafb;
+  --color-card-bg: #ffffff;
+  --color-border: #e5e7eb;
+}
+
+/* ✅ BASE STYLES */
+@layer base {
+  body {
+    @apply bg-light text-dark font-['Montserrat'] overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-['Montserrat'] font-bold text-primary tracking-tight;
+  }
+}
+
+/* ✅ COMPONENTS */
+@layer components {
+
+  .btn-primary {
+    @apply px-8 py-3 bg-accent text-white font-bold rounded-lg shadow-md transition-all duration-300 hover:bg-red-700 hover:shadow-xl;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border-2 border-accent text-accent font-bold rounded-lg transition-all duration-300 hover:bg-accent hover:text-white;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+
+  .white-card {
+    @apply bg-white border border-border rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500;
+  }
+}
+
+/* ✅ ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+
+/* ✅ EXTRA UI IMPROVEMENTS */
+.soft-glass {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-700;
+}
