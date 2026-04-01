@@ -1,105 +1,163 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShoppingCart, Calendar, Wrench, Globe, ShieldCheck, Truck } from 'lucide-react';
+import { 
+  Truck, 
+  Wrench, 
+  Award, 
+  ShieldCheck, 
+  Users, 
+  Globe, 
+  Settings, 
+  Factory 
+} from 'lucide-react';
 
 export const Services = () => {
   const services = [
     {
-      title: "Equipment Trading",
-      desc: "Wholesale and retail trading of heavy earthmovers and related machinery internationally. We deal with top brands like Volvo, Hyundai, and Tata Hitachi.",
-      icon: <ShoppingCart size={32} />
+      icon: <Truck className="w-8 h-8" />,
+      title: "Trading of Heavy Used/New Construction Equipments",
+      desc: "We are a dynamic exporter, importer, and supplier offering a wide variety of used and new heavy construction & mining equipment all over the world."
     },
     {
-      title: "Supply on Hire",
-      desc: "Our rental services provide heavy machinery on a monthly or daily hire basis, supported by our experienced hiring and management team.",
-      icon: <Calendar size={32} />
+      icon: <Award className="w-8 h-8" />,
+      title: "Supply of Machines on Hire Basis",
+      desc: "Authorized contractor for machine hiring. Professional technical management and supply of machines on hire basis for construction and mining projects."
     },
     {
-      title: "Original Spare Parts",
-      desc: "Comprehensive supply of all machine related spare parts. We ensure availability and original quality for every part we supply globally.",
-      icon: <Wrench size={32} />
-    }
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Repairs & Technical Assistance",
+      desc: "Provide complete repair solutions and technical assistance on heavy construction equipments. Well-equipped workshop near JNPT port for maintenance and refurbishment."
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: "Freight Forwarding",
+      desc: "Own Freight Forwarding division with a worldwide agency network. We handle local as well as international shipments to reduce costs and ensure safety."
+    },
+    {
+      icon: <ShieldCheck className="w-8 h-8" />,
+      title: "Custom Clearance",
+      desc: "Professional custom clearance services all over the world. Hassle-free documentation and clearance for smooth export and import operations."
+    },
+    {
+      icon: <Settings className="w-8 h-8" />,
+      title: "Spare Parts Supply",
+      desc: "Wholesale and retail supply of original spare parts for all major heavy equipment brands to ensure durability and long machine life."
+    },
   ];
 
   return (
-    <section id="services" className="section-padding bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-24 gap-10">
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center md:items-start text-center md:text-left"
-          >
-            <span className="text-accent font-bold uppercase tracking-[0.4em] text-[10px]">What We Do</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mt-4 uppercase text-primary">OUR <span className="text-accent">SERVICES</span></h2>
-          </motion.div>
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="max-w-lg"
-          >
-             <p className="text-dark/60 text-lg font-medium leading-relaxed italic border-l-4 border-primary/20 pl-8">
-               Qualified engineers and trained technical staff provide service support to the highest standards. We have our own fleet to ensure safe and timely transportation throughout India.
-             </p>
-          </motion.div>
+    <div className="bg-white pt-30"> 
+
+      {/* Services Hero Banner */}
+      <section className="relative w-full min-h-[85vh] lg:min-h-[90vh] flex items-center bg-[#1a1a1a] overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/hero.png" 
+            alt="Heavy Machinery Services" 
+            className="w-full h-full object-cover opacity-75"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((item, index) => (
-            <motion.div 
-              key={index} 
-              initial={{ opacity: 0, y: 30 }}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-24">
+          <div className="flex items-center gap-4">
+            <div className="w-3 h-10 bg-yellow-500" />
+            <h1 className="text-5xl lg:text-7xl font-black text-white tracking-tighter leading-none">
+              SERVICES<br />OFFERED
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Services Content */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-24 py-16 lg:py-24">
+        <div className="text-center mb-16">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Markable Equipments is your trusted partner for all heavy construction and mining equipment needs. 
+            We provide end-to-end solutions from trading to after-sales support.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -10 }}
+              transition={{ delay: index * 0.05 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group p-12 bg-bg-alt border border-border hover:bg-white hover:border-accent hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all duration-500 rounded-[2.5rem] relative overflow-hidden"
+              className="bg-white p-10 rounded-3xl shadow hover:shadow-xl transition-all duration-300 group border border-gray-100"
             >
-              <div className="absolute top-0 left-0 w-2 h-0 bg-accent group-hover:h-full transition-all duration-500" />
-              
-              <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 text-primary">
-                {item.icon}
+              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6 text-yellow-600 group-hover:scale-110 transition-transform">
+                {service.icon}
               </div>
-
-              <h3 className="text-2xl font-black text-primary mb-6 uppercase tracking-tight">{item.title}</h3>
-              <p className="text-dark/50 leading-relaxed mb-10 text-sm font-medium">{item.desc}</p>
-
-              <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest text-accent group-hover:gap-5 transition-all">
-                Learn More
-                <span className="w-8 h-[2px] bg-accent" />
-              </div>
+              <h3 className="text-2xl font-bold text-primary mb-4 leading-tight">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {service.desc}
+              </p>
             </motion.div>
           ))}
         </div>
+      </section>
 
-        {/* Extra Logistics Bar */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-20 grid md:grid-cols-4 gap-4"
-        >
-           {[
-             { label: "Logistics Division", icon: <Truck size={14} /> },
-             { label: "Customs Clearance", icon: <ShieldCheck size={14} /> },
-             { label: "Lashing & Chocking", icon: <Wrench size={14} /> },
-             { label: "Global Partnerships", icon: <Globe size={14} /> }
-           ].map((item, i) => (
-             <motion.div 
-               key={item.label} 
-               whileHover={{ scale: 1.05 }}
-               className="flex items-center justify-center gap-2 p-4 bg-white border border-border rounded-xl text-[10px] font-bold uppercase tracking-widest text-primary/60 cursor-default"
-             >
-                {item.icon}
-                {item.label}
-             </motion.div>
-           ))}
-        </motion.div>
-      </div>
-    </section>
+      {/* Additional Highlights Section */}
+      <section className="bg-gray-50 py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-24">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-primary tracking-tight">
+              COMPLETE SUPPORT FOR YOUR EQUIPMENT NEEDS
+            </h2>
+            <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+              From sourcing to delivery and beyond — we ensure quality, safety, and complete customer satisfaction.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-3xl shadow flex gap-6">
+              <Factory className="w-10 h-10 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold text-xl mb-2">Workshop Near JNPT Port</h4>
+                <p className="text-gray-600">
+                  Fully equipped workshop for repair, maintenance, washing, and testing of machines before export.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow flex gap-6">
+              <Users className="w-10 h-10 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold text-xl mb-2">Expert Technical Team</h4>
+                <p className="text-gray-600">
+                  Qualified engineers and professional staff for after-sales support, site inspections, and technical advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action / Contact Teaser */}
+      <section className="py-20 bg-gradient-to-br from-yellow-400 to-orange-500 text-white">
+        <div className="max-w-4xl mx-auto text-center px-6">
+          <h2 className="text-4xl font-bold mb-6">Ready to discuss your equipment requirements?</h2>
+          <p className="text-xl mb-10 opacity-90">
+            Contact us today for trading, hiring, repairs, logistics, or any heavy equipment solution.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a href="mailto:sales@markableindia.com" className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+              sales@eliteglobalearthmover.com
+            </a>
+            <a href="tel:+919321137273" className="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">
+              +91 93211 37273
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
+
+

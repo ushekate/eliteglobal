@@ -1,91 +1,154 @@
+import React from 'react';
+
 export const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-gray-100">
-      <div className="max-w-5xl mx-auto px-6">
-        
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold tracking-wide">
-            GET IN <span className="text-accent">TOUCH</span>
-          </h2>
-          <div className="w-20 h-1 bg-accent mx-auto mt-3 rounded"></div>
-        </div>
+    return (
+        <div className="bg-white pt-30">
 
-        {/* Form */}
-        <form className="space-y-6">
-          
-          {/* Name */}
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full p-4 rounded-lg border border-gray-300 
-            bg-gradient-to-b from-gray-100 to-gray-200 
-            shadow-inner focus:outline-none focus:ring-2 focus:ring-accent"
-          />
+            {/* Contact Hero Banner */}
+            <section className="relative w-full min-h-[85vh] lg:min-h-[90vh] flex items-center bg-[#1a1a1a] overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img 
+                        src="/hero.png" 
+                        alt="Contact Elite Global Earthmover" 
+                        className="w-full h-full object-cover opacity-75"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+                </div>
 
-          {/* Subject */}
-          <input
-            type="text"
-            placeholder="Subject"
-            className="w-full p-4 rounded-lg border border-gray-300 
-            bg-gradient-to-b from-gray-100 to-gray-200 
-            shadow-inner focus:outline-none focus:ring-2 focus:ring-accent"
-          />
+                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-24">
+                    <div className="flex items-center gap-4">
+                        <div className="w-3 h-10 bg-yellow-500" />
+                        <h1 className="text-5xl lg:text-7xl font-black text-white tracking-tighter leading-none">
+                            GET IN<br />TOUCH
+                        </h1>
+                    </div>
+                    <p className="mt-6 text-xl text-white/80 max-w-lg">
+                        Ready to discuss your heavy equipment needs? Our team is here to help.
+                    </p>
+                </div>
+            </section>
 
-          {/* Email + Phone */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full p-4 rounded-lg border border-gray-300 
-              bg-gradient-to-b from-gray-100 to-gray-200 
-              shadow-inner focus:outline-none focus:ring-2 focus:ring-accent"
-            />
+            {/* Main Contact Section */}
+            <section id="contact" className="py-20 lg:py-28 bg-white">
+                <div className="max-w-6xl mx-auto px-6">
 
-            <input
-              type="text"
-              placeholder="Phone Number"
-              className="w-full p-4 rounded-lg border border-gray-300 
-              bg-gradient-to-b from-gray-100 to-gray-200 
-              shadow-inner focus:outline-none focus:ring-2 focus:ring-accent"
-            />
-          </div>
+                    {/* Heading */}
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                            Contact <span className="text-accent">Us</span>
+                        </h2>
+                        <p className="text-gray-500 mt-4 max-w-md mx-auto">
+                            Reach out for business inquiries, equipment sourcing, or any support you need.
+                        </p>
+                    </div>
 
-          {/* Message */}
-          <textarea
-            rows="6"
-            placeholder="Message"
-            className="w-full p-4 rounded-lg border border-gray-300 
-            bg-gradient-to-b from-gray-100 to-gray-200 
-            shadow-inner focus:outline-none focus:ring-2 focus:ring-accent"
-          ></textarea>
+                    <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
 
-          {/* Captcha + Button */}
-          <div className="flex flex-col md:flex-row items-center justify-end gap-4">
-            
-            <div className="flex items-center gap-2">
-              <span className="text-gray-700 font-medium">1 + 6 =</span>
-              <input
-                type="text"
-                className="w-14 h-12 text-center rounded-md border border-gray-300 
-                bg-gradient-to-b from-gray-100 to-gray-200 shadow-inner"
-              />
+                        {/* LEFT - CONTACT FORM */}
+                        <div>
+                            <form className="space-y-6">
+                                {/* Name */}
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    className="w-full p-4 rounded-2xl border border-gray-300 
+                                    bg-gradient-to-b from-gray-100 to-gray-200 
+                                    shadow-inner focus:outline-none focus:ring-2 focus:ring-accent transition"
+                                />
+
+                                {/* Subject */}
+                                <input
+                                    type="text"
+                                    placeholder="Subject"
+                                    className="w-full p-4 rounded-2xl border border-gray-300 
+                                    bg-gradient-to-b from-gray-100 to-gray-200 
+                                    shadow-inner focus:outline-none focus:ring-2 focus:ring-accent transition"
+                                />
+
+                                {/* Email + Phone */}
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                        className="w-full p-4 rounded-2xl border border-gray-300 
+                                        bg-gradient-to-b from-gray-100 to-gray-200 
+                                        shadow-inner focus:outline-none focus:ring-2 focus:ring-accent transition"
+                                    />
+
+                                    <input
+                                        type="text"
+                                        placeholder="Phone Number"
+                                        className="w-full p-4 rounded-2xl border border-gray-300 
+                                        bg-gradient-to-b from-gray-100 to-gray-200 
+                                        shadow-inner focus:outline-none focus:ring-2 focus:ring-accent transition"
+                                    />
+                                </div>
+
+                                {/* Message */}
+                                <textarea
+                                    rows="7"
+                                    placeholder="Your Message / Requirements"
+                                    className="w-full p-4 rounded-2xl border border-gray-300 
+                                    bg-gradient-to-b from-gray-100 to-gray-200 
+                                    shadow-inner focus:outline-none focus:ring-2 focus:ring-accent transition"
+                                ></textarea>
+
+                                {/* Captcha + Button */}
+                                <div className="flex flex-col md:flex-row items-center justify-end gap-6 pt-4">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-gray-700 font-medium text-sm">1 + 6 =</span>
+                                        <input
+                                            type="text"
+                                            className="w-16 h-12 text-center rounded-xl border border-gray-300 
+                                            bg-gradient-to-b from-gray-100 to-gray-200 shadow-inner focus:outline-none"
+                                        />
+                                    </div>
+
+                                    <button
+                                        type="submit"
+                                        className="bg-gradient-to-r from-accent to-accent/80 hover:to-accent
+                                        text-white font-semibold px-10 py-4 rounded-2xl 
+                                        shadow-lg hover:scale-105 active:scale-95 transition duration-300"
+                                    >
+                                        SEND MESSAGE
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        {/* RIGHT - LOCATION + INFO */}
+                        <div className="space-y-8">
+
+                                                  <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Our Location & Contact Info</h3>
+              <p className="text-gray-600 text-sm">
+                Elite Global Earthmover India Pvt Ltd 
+
+                Near JNPT Port, Navi Mumbai 
+
+                Maharashtra, India
+              </p>
+              <p className="text-gray-600 text-sm">📞 +91 98765 43210</p>
+              <p className="text-gray-600 text-sm">✉️ info@eliteglobalearthmover.com</p>
             </div>
 
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-accent to-accent/40 
-              text-white font-semibold px-8 py-3 rounded-full 
-              shadow-lg hover:scale-105 transition duration-300"
-            >
-              SEND MESSAGE
-            </button>
-          </div>
+                            {/* Google Map */}
+                            <div className="rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+                                <iframe
+                                    title="Our Location - Near JNPT Port"
+                                    src="https://maps.google.com/maps?q=CBD%20Belapur%20Navi%20Mumbai%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    className="w-full h-86 border-0"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
 
-        </form>
-      </div>
-    </section>
-  );
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
 };
 
 
