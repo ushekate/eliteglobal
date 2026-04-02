@@ -105,7 +105,7 @@ export const Hero = () => {
           <div className="flex flex-col gap-3 lg:gap-4">
             <div className="flex items-center gap-3">
                <span className="w-8 lg:w-10 h-[2px] bg-accent" />
-               <span className="text-accent font-bold uppercase tracking-[.4em] text-[9px] lg:text-[10px]">Since 2021 | ISO 9001:2008</span>
+               <span className="text-accent font-bold uppercase tracking-[.4em] text-[9px] lg:text-[10px]">Trusted Equipment Brand</span>
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-6xl font-black leading-[1.1] lg:leading-[1.05] tracking-tight text-primary uppercase">
                Elite Global Earthmover<br />
@@ -118,7 +118,7 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col gap-3 lg:gap-4">
-             {["World wide Exporter", "ISO certified Company", "Ready Inventory"].map((item) => (
+             {["World wide Exporter", "Trusted Brand", "Ready Inventory"].map((item) => (
                <div key={item} className="flex items-center gap-2 lg:gap-3 text-[10px] lg:text-sm font-bold text-primary/80 uppercase tracking-widest">
                   <CheckCircle2 size={16} className="text-accent" />
                   {item}

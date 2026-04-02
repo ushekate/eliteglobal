@@ -29,7 +29,7 @@ export const Footer = () => {
                      </div>
                   </div>
                   <p className="text-dark/50 leading-relaxed text-sm max-w-sm font-medium">
-                     We are a proud ISO 9001:2008 certified company. A dynamic Exporter, Importer & Supplier of USED AND NEW Heavy Construction & mining equipments globally.
+                     We are a proud certified company. A dynamic Exporter, Importer & Supplier of USED AND NEW Heavy Construction & mining equipments globally.
                   </p>
                   <div className="flex gap-4">
                      {[Instagram, Facebook, Linkedin].map((Icon, i) => (
@@ -86,8 +86,8 @@ export const Footer = () => {
                         <div className="flex flex-col gap-1">
                            <span className="text-[10px] font-black text-dark/30 uppercase tracking-widest italic leading-none">Call Us</span>
                            <p className="text-xs text-dark/60 font-bold leading-loose font-mono">
-                              +91 93211 37273 | 98673 68049 <br />
-                              +91 91528 16514 | 98191 27488
+                              +91 XXXXX XXXXX | XXXXX XXXXX <br />
+                              +91 XXXXX XXXXX | XXXXX XXXXX
                            </p>
                         </div>
                      </div>
