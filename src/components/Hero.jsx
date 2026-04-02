@@ -201,7 +201,7 @@ export const Hero = () => {
             >
               <span className="text-accent font-bold uppercase tracking-[0.4em] text-[10px]">Company Legacy</span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mt-4 uppercase text-primary mb-6">WHY <span className="text-accent">Elite Global Earthmover?</span></h2>
-              <p className="text-dark/60 font-medium">We are proud ISO 9001:2008 certified company. We strictly adhere to stringent quality policies and practices to satisfy our customers globally.</p>
+              <p className="text-dark/60 font-medium">We are proud Trusted Brand. We strictly adhere to stringent quality policies and practices to satisfy our customers globally.</p>
             </motion.div>
     
             <div className="grid lg:grid-cols-2 gap-20 items-stretch ">
@@ -226,8 +226,8 @@ export const Hero = () => {
     
                 <div className="grid grid-cols-2 gap-6">
                   <div className="p-8 bg-white rounded-2xl shadow-sm border border-border">
-                    <span className="text-3xl font-black text-primary">ISO</span>
-                    <p className="text-[10px] uppercase font-bold tracking-widest text-dark/40 mt-1">9001:2008 Certified</p>
+                    <span className="text-3xl font-black text-primary">Trusted</span>
+                    <p className="text-[10px] uppercase font-bold tracking-widest text-dark/40 mt-1">Equipment Brand</p>
                   </div>
                   <div className="p-8 bg-white rounded-2xl shadow-sm border border-border">
                     <span className="text-3xl font-black text-primary">10+</span>

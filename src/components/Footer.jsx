@@ -29,7 +29,7 @@ export const Footer = () => {
                      </div>
                   </div>
                   <p className="text-dark/50 leading-relaxed text-sm max-w-sm font-medium">
-                     We are a proud certified company. A dynamic Exporter, Importer & Supplier of USED AND NEW Heavy Construction & mining equipments globally.
+                     We are a Proud Trusted Brand. A dynamic Exporter, Importer & Supplier of USED AND NEW Heavy Construction & mining equipments globally.
                   </p>
                   <div className="flex gap-4">
                      {[Instagram, Facebook, Linkedin].map((Icon, i) => (
@@ -148,7 +148,7 @@ export const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="pt-12 border-t border-border flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* <div className="pt-12 border-t border-border flex flex-col md:flex-row items-center justify-between gap-8">
                <div className="flex flex-col gap-2 text-center md:text-left">
                   <p className="text-[10px] font-black text-dark/30 uppercase tracking-[0.2em]">
                      Group of companies: <span className="text-primary">BATWALKARS REMARKABLE EQUIPMENTS</span>
@@ -163,11 +163,8 @@ export const Footer = () => {
                   <p className="text-[10px] text-dark/20 font-bold uppercase tracking-widest">
                      © {new Date().getFullYear()} Elite Global Earthmover EQUIPMENTS. ALL RIGHTS RESERVED.
                   </p>
-                  {/* <p className="text-[10px] text-dark/20 font-bold uppercase tracking-widest">
-                     © 2026 Elite Global Earthmover EQUIPMENTS. ALL RIGHTS RESERVED.
-                  </p> */}
                </div>
-            </div>
+            </div> */}
          </div>
       </footer>
    );
