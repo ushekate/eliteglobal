@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin, ArrowRight, Send, ShieldCheck, Globe } from 'lucide-react';
+import logo from '../assets/logo.jpeg';
 
 export const Footer = () => {
    return (
@@ -10,11 +11,18 @@ export const Footer = () => {
                {/* Column 1: Brand & Socials */}
                <div className="lg:col-span-2 flex flex-col gap-8">
                   <div className="flex items-center gap-3">
-                     <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center p-2 shadow-lg">
+                     <div className="w-24 h-20 bg-white rounded-xl flex items-center justify-center shadow-lg border border-gray-100">
+                        <img
+                           src={logo}
+                           alt="Elite Global Earthmover Logo"
+                           className="w-full h-full object-contain"
+                        />
+                     </div>
+                     {/* <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center p-2 shadow-lg">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-8 h-8 text-white">
                            <path d="M7 21v-4m0-14V3m0 0l-4 4m4-4l4 4M2 17h10M12 17l4-4m-4 4l4 4" />
                         </svg>
-                     </div>
+                     </div> */}
                      <div className="flex flex-col">
                         <span className="text-3xl font-black text-primary uppercase tracking-tight">Elite Global Earthmover</span>
                         <span className="text-[10px] font-bold text-accent tracking-[0.4em] -mt-1 uppercase">Equipments</span>
@@ -37,12 +45,12 @@ export const Footer = () => {
                   <h4 className="text-primary font-black uppercase tracking-widest text-sm relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-8 after:h-1 after:bg-accent">Site Map</h4>
                   <div className="flex flex-col gap-4">
                      {[
-                        { name: 'Home', href: '#' },
-                        { name: 'About Us', href: '#about' },
-                        { name: 'Products', href: '#products' },
-                        { name: 'Services', href: '#services' },
-                        { name: 'Gallery', href: '#gallery' },
-                        { name: 'Contact', href: '#contact' }
+                        { name: 'Home', href: '/' },
+                        { name: 'About Us', href: '/about' },
+                        { name: 'Products', href: '/products' },
+                        { name: 'Services', href: '/services' },
+                        { name: 'Gallery', href: '/gallery' },
+                        { name: 'Contact', href: '/contact' }
                      ].map((link) => (
                         <a
                            key={link.name}
@@ -67,7 +75,7 @@ export const Footer = () => {
                         <div className="flex flex-col gap-1">
                            <span className="text-[10px] font-black text-dark/30 uppercase tracking-widest italic leading-none">Main Office</span>
                            <p className="text-xs text-dark/60 font-bold leading-relaxed">
-                              110/11 Ashirwad Building, Curnac Bundar Mumbai 400 009
+                              Office No S - 07 -64, 2nd Floor Haware Centurion Mall, Near Seawood Railway Station, Sector 19A, Nerul, Navi Mumbai, Maharashtra, India - 400 706.
                            </p>
                         </div>
                      </div>
@@ -97,18 +105,18 @@ export const Footer = () => {
                         <div className="flex flex-col gap-1">
                            <span className="text-[10px] font-black text-dark/30 uppercase tracking-widest italic leading-none">Admin Office</span>
                            <p className="text-xs text-dark/60 font-bold leading-relaxed">
-                              75/ Pranhat Center, Sector 1A/6A, CBD Belapur 400 614
+                              Office No S - 07 -64, 2nd Floor Haware Centurion Mall, Near Seawood Railway Station, Sector 19A, Nerul, Navi Mumbai, Maharashtra, India - 400 706.
                            </p>
                         </div>
                      </div>
                      <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-3 p-3 bg-accent/5 rounded-xl border border-accent/10">
                            <Mail size={16} className="text-accent" />
-                           <span className="text-[10px] font-bold text-primary/60 truncate">sales@eliteglobalearthmoverindia.com</span>
+                           <span className="text-[10px] font-bold text-primary/60 truncate">info@eliteglobalearthmover.com</span>
                         </div>
                         <div className="flex items-center gap-3 p-3 bg-accent/5 rounded-xl border border-accent/10">
                            <Mail size={16} className="text-accent" />
-                           <span className="text-[10px] font-bold text-primary/60 truncate">batwalkar@eliteglobalearthmoverindia.com</span>
+                           <span className="text-[10px] font-bold text-primary/60 truncate">sales@eliteglobalearthmover.com</span>
                         </div>
                      </div>
                   </div>

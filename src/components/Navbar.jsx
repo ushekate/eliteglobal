@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.jpeg';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,16 +58,19 @@ export const Navbar = () => {
 
       {/* Main Navbar */}
       <nav className="bg-white border-b">
-        <div className="px-6 lg:px-12 py-5 flex justify-between items-center">
+        <div className="px-6 lg:px-12 py-2 flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3" onClick={closeAll}>
-            <div className="w-12 h-12 bg-[#F9A825] rounded-xl flex items-center justify-center">
-              <span className="text-white text-4xl font-black tracking-tighter">M</span>
-            </div>
-            <div className="leading-none">
-              <div className="text-2xl font-black text-[#F9A825] tracking-tight">Markable</div>
-              <div className="text-[10px] font-bold text-gray-700 tracking-[2px] uppercase -mt-1">Equipments</div>
-            </div>
+          {/* Logo */}
+          <Link
+            to="/"
+            className="flex items-center"
+            onClick={closeAll}
+          >
+            <img
+              src={logo}
+              alt="Elite Global Earthmover"
+              className="h-16 md:h-16 w-auto object-contain transition-all duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -122,8 +126,8 @@ export const Navbar = () => {
 
       {/* Modern Mobile Sidebar Menu (Slide from Right) */}
       <div className={`fixed inset-0 bg-black/50 z-[70] transition-opacity duration-300 lg:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
-           onClick={closeAll}>
-        <div 
+        onClick={closeAll}>
+        <div
           className={`absolute top-0 right-0 h-full w-80 bg-gradient-to-b from-primary via-accent-900 to-accent text-white shadow-2xl transform transition-transform duration-300 ease-out overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           onClick={(e) => e.stopPropagation()}
         >
@@ -134,7 +138,7 @@ export const Navbar = () => {
                 <span className="text-[#F9A825] text-3xl font-black">M</span>
               </div>
               <div>
-                <div className="font-bold text-xl tracking-tight">Markable</div>
+                <div className="font-bold text-xl tracking-tight">Elite Global Earthmover</div>
                 <div className="text-xs tracking-widest opacity-75">EQUIPMENTS</div>
               </div>
             </div>

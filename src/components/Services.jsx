@@ -74,7 +74,7 @@ export const Services = () => {
       <section className="max-w-7xl mx-auto px-6 lg:px-24 py-16 lg:py-24">
         <div className="text-center mb-16">
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Markable Equipments is your trusted partner for all heavy construction and mining equipment needs. 
+            Elite Global Earthmover Equipments is your trusted partner for all heavy construction and mining equipment needs. 
             We provide end-to-end solutions from trading to after-sales support.
           </p>
         </div>
@@ -147,11 +147,11 @@ export const Services = () => {
             Contact us today for trading, hiring, repairs, logistics, or any heavy equipment solution.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <a href="mailto:sales@markableindia.com" className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+            <a href="mailto:sales@eliteglobalearthmover.com" className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
               sales@eliteglobalearthmover.com
             </a>
             <a href="tel:+919321137273" className="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">
-              +91 93211 37273
+              +91 XXXXX XXXXX
             </a>
           </div>
         </div>
